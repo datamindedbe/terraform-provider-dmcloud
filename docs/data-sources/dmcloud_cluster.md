@@ -23,11 +23,11 @@ data "dmcloud_cluster" "dev" {
 
 ### Required
 
-- **name** (String) The name of the cluster
+- `name` (String) The name of the cluster
 
 ### Read-Only
 
-- **default** (Boolean) Wether this is the default cluster
-- **id** (String) The id of cluster
+- `default` (Boolean) Wether this is the default cluster
+- `id` (String) The id of cluster
 
 

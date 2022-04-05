@@ -3,12 +3,12 @@
 page_title: "dmcloud_project Resource - tf-provider"
 subcategory: ""
 description: |-
-  Provides a Datafy project.
+  Provides a Data Minded Cloud project.
 ---
 
 # dmcloud_project (Resource)
 
-Provides a Datafy project.
+Provides a Data Minded Cloud project.
 
 ## Example Usage
 
@@ -23,12 +23,12 @@ resource "dmcloud_project" "my_project" {
 
 ### Required
 
-- **name** (String) The name of the project
+- `name` (String) The name of the project
 
 ### Optional
 
-- **description** (String) The description of the project, you can input markdown here
-- **id** (String) The ID of this resource.
+- `description` (String) The description of the project, you can input markdown here
+- `id` (String) The ID of this resource.
 
 ## Import
 
@@ -36,5 +36,5 @@ Import is supported using the following syntax:
 
 ```shell
 export PROJECT_ID=$(datafy project get --name my_project -ojson | jq -r ".id")
-terraform import datafy_project.my_project "$PROJECT_ID"
+terraform import dmcloud_project.my_project "$PROJECT_ID"
 ```

@@ -3,12 +3,12 @@
 page_title: "dmcloud_environment Resource - tf-provider"
 subcategory: ""
 description: |-
-  Provides a Datafy environment.
+  Provides a Data Minded Cloud environment.
 ---
 
 # dmcloud_environment (Resource)
 
-Provides a Datafy environment.
+Provides a Data Minded Cloud environment.
 
 ## Example Usage
 
@@ -23,14 +23,14 @@ resource "dmcloud_environment" "dev" {
 
 ### Required
 
-- **name** (String) The name of the environment
+- `name` (String) The name of the environment
 
 ### Optional
 
-- **airflow_version** (String) The airflow version of the environment, either 1 or 2
-- **cluster_id** (String) The cluster if of the environment
-- **deletion_protection** (Boolean) Wether to project your environment from deletion
-- **id** (String) The ID of this resource.
+- `airflow_version` (String) The airflow version of the environment, either 1 or 2
+- `cluster_id` (String) The cluster if of the environment
+- `deletion_protection` (Boolean) Wether to project your environment from deletion
+- `id` (String) The ID of this resource.
 
 ## Import
 
@@ -38,5 +38,5 @@ Import is supported using the following syntax:
 
 ```shell
 export ENV_ID=$(datafy env get --name dev -ojson | jq -r ".id")
-terraform import datafy_environment.dev "$ENV_ID"
+terraform import dmcloud_environment.dev "$ENV_ID"
 ```

@@ -29,13 +29,13 @@ resource "dmcloud_environment_user" "my_environment_user" {
 
 ### Required
 
-- **environment_id** (String) The id of the environment to add the user to
-- **role** (String) The role the user should have on the environment, either `admin`, `contributor` or `operator`
-- **user_id** (String) The email address of the user to add
+- `environment_id` (String) The id of the environment to add the user to
+- `role` (String) The role the user should have on the environment, either `admin`, `contributor` or `operator`
+- `user_id` (String) The email address of the user to add
 
 ### Optional
 
-- **id** (String) The ID of this resource.
+- `id` (String) The ID of this resource.
 
 ## Import
 
@@ -43,5 +43,5 @@ Import is supported using the following syntax:
 
 ```shell
 export ENV_ID=$(datafy env get --name dev -ojson | jq -r ".id")
-terraform import datafy_environment_user.my_environment_user "$ENV_ID"/test@gmail.com
+terraform import dmcloud_environment_user.my_environment_user "$ENV_ID"/test@gmail.com
 ```
