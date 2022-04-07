@@ -29,11 +29,11 @@ resource "dmcloud_environment_user" "my_environment_user" {
 
 ### Required
 
-- `environment_id` (String) The id of the environment to add the user to
-- `role` (String) The role the user should have on the environment, either `admin`, `contributor` or `operator`
-- `user_id` (String) The email address of the user to add
+- `environment_id` (String) The id of the environment to add the user to.
+- `role` (String) The role the user should have on the environment, either `admin`, `contributor` or `operator`.
+- `user_id` (String) The email address of the user to add.
 
-### Optional
+### Read-Only
 
 - `id` (String) The ID of this resource.
 

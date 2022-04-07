@@ -29,13 +29,13 @@ resource "dmcloud_project_user" "my_project_user" {
 
 ### Required
 
-- `project_id` (String) The id of the project to add the user to
-- `role` (String) The role the user should have on the project, either `admin` or `contributor`
-- `user_id` (String) The email address of the user to add
+- `project_id` (String) The id of the project to add the user to.
+- `role` (String) The role the user should have on the project, either `admin` or `contributor`.
+- `user_id` (String) The email address of the user to add.
 
-### Optional
+### Read-Only
 
-- `id` (String) The ID of this resource.
+- `id` (String) The ID of this resource
 
 ## Import
 

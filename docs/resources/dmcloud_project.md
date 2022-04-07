@@ -4,11 +4,20 @@ page_title: "dmcloud_project Resource - tf-provider"
 subcategory: ""
 description: |-
   Provides a Data Minded Cloud project.
+  After creating a project with the terraform provider you can generate the .datafy/project.yaml file with the command:
+  bash
+  datafy project generate-config --name YOUR_PROJECT_NAME
 ---
 
 # dmcloud_project (Resource)
 
 Provides a Data Minded Cloud project.
+
+After creating a project with the terraform provider you can generate the `.datafy/project.yaml` file with the command:
+
+```bash
+datafy project generate-config --name YOUR_PROJECT_NAME
+```
 
 ## Example Usage
 
@@ -23,12 +32,15 @@ resource "dmcloud_project" "my_project" {
 
 ### Required
 
-- `name` (String) The name of the project
+- `name` (String) The name of the project.
 
 ### Optional
 
-- `description` (String) The description of the project, you can input markdown here
-- `id` (String) The ID of this resource.
+- `description` (String) The description of the project, you can input markdown here.
+
+### Read-Only
+
+- `id` (String) The id of the environment.
 
 ## Import
 

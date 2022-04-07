@@ -23,14 +23,17 @@ resource "dmcloud_environment" "dev" {
 
 ### Required
 
-- `name` (String) The name of the environment
+- `name` (String) The name of the environment.
 
 ### Optional
 
-- `airflow_version` (String) The airflow version of the environment, either 1 or 2
+- `airflow_version` (String) The airflow version of the environment, either 1 or 2, defaults to 2.
 - `cluster_id` (String) The cluster if of the environment
-- `deletion_protection` (Boolean) Wether to project your environment from deletion
-- `id` (String) The ID of this resource.
+- `deletion_protection` (Boolean) Wether to project your environment from deletion.
+
+### Read-Only
+
+- `id` (String) The id of the environment.
 
 ## Import
 
