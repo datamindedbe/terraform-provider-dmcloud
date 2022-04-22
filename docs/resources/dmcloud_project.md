@@ -37,10 +37,11 @@ resource "dmcloud_project" "my_project" {
 ### Optional
 
 - `description` (String) The description of the project, you can input markdown here.
+- `git_repo` (String) The link to the git repo for this project.
 
 ### Read-Only
 
-- `id` (String) The id of the environment.
+- `id` (String) The id of the project.
 
 ## Import
 
